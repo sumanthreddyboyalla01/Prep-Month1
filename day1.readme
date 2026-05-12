@@ -1,0 +1,640 @@
+Hello, this is Sumanth. I officially started my Cloud Architect preparation on 12 May 2026.
+
+Today marks Day 1 of my journey—learning Linux fundamentals and pushing my progress to GitHub using Git commands.
+
+1. ls
+Purpose: List files and directories
+Syntax:
+ls
+Example:
+ls
+Output:
+Documents  Downloads  projects  notes.txt
+
+2. ls -la
+Purpose: List all files/directories including hidden files with details
+Syntax:
+ls -la
+Example:
+ls -la
+Output:
+drwxr-xr-x  5 sumanth sumanth 4096 May 12 10:30 .
+drwxr-xr-x 10 sumanth sumanth 4096 May 12 10:00 ..
+-rw-r--r--  1 sumanth sumanth 3771 May 12 10:00 .bashrc
+drwxr-xr-x  2 sumanth sumanth 4096 May 12 10:20 projects
+
+3. cp
+Purpose: Copy files
+Syntax:
+cp source destination
+Example:
+cp notes.txt backup.txt
+Output:
+(no output if successful)
+
+4. mv
+Purpose: Move or rename files
+Syntax:
+mv source destination
+Example:
+mv backup.txt notes_backup.txt
+Output:
+(no output if successful)
+
+5. rm
+Purpose: Remove files
+Syntax:
+rm filename
+Example:
+rm notes.txt
+Output:
+(no output if successful)
+
+6. mkdir
+Purpose: Create directory
+Syntax:
+mkdir directory_name
+Example:
+mkdir projects
+Output:
+(no output if successful)
+
+7. rmdir
+Purpose: Remove empty directory
+Syntax:
+rmdir directory_name
+Example:
+rmdir projects
+Output:
+(no output if successful)
+
+8. cat
+Purpose: Read file contents
+Syntax:
+cat filename
+Example:
+cat hello.txt
+Output:
+Hello Linux
+Welcome Sumanth
+
+9. touch
+Purpose: Create empty file
+Syntax:
+touch filename
+Example:
+touch day1.txt
+Output:
+(no output if successful)
+
+10. grep
+Purpose: Search specific keyword in file
+Syntax:
+grep "word" filename
+Example:
+grep "Linux" notes.txt
+Output:
+Linux fundamentals are important
+
+11. grep -i
+Purpose: Case-insensitive search
+Syntax:
+grep -i "word" filename
+Example:
+grep -i "linux" notes.txt
+Output:
+Linux fundamentals
+LINUX commands
+linux basics
+
+12. find
+Purpose: Search files
+Syntax:
+find path -name "pattern"
+Example:
+find . -name "*.txt"
+Output:
+./day1.txt
+./notes.txt
+./docs/report.txt
+
+13. find .
+Purpose: Search from current directory
+Syntax:
+find .
+Example:
+find .
+Output:
+.
+./notes.txt
+./projects
+./projects/day1.sh
+
+14. find . -name "*.txt"
+Purpose: Find all txt files
+Syntax:
+find . -name "*.txt"
+Example:
+find . -name "*.txt"
+Output:
+./hello.txt
+./notes/day1.txt
+
+15. ls -l
+Purpose: Check file permissions
+Syntax:
+ls -l
+Example:
+ls -l
+Output:
+-rw-r--r-- 1 sumanth sumanth 120 May 12 day1.txt
+
+16. chmod
+Purpose: Change file permissions
+Syntax:
+chmod permissions filename
+Example:
+chmod +x day1.sh
+Output:
+(no output if successful)
+
+17. ps
+Purpose: Show current running processes
+Syntax:
+ps
+Example:
+ps
+Output:
+PID TTY          TIME CMD
+2345 pts/0    00:00:00 bash
+4567 pts/0    00:00:00 ps
+
+18. ps aux
+Purpose: Show all running processes
+Syntax:
+ps aux
+Example:
+ps aux
+Output:
+USER     PID %CPU %MEM COMMAND
+root       1  0.0  0.1 /sbin/init
+sumanth  2345 0.1  0.2 bash
+
+19. top
+Purpose: Real-time system monitor
+Syntax:
+top
+Example:
+top
+Output:
+top - 14:22:10 up 2:10
+Tasks: 120 total
+CPU usage: 12%
+Memory: 45%
+
+Exit:
+q
+
+20. df -h
+Purpose: Show disk storage
+Syntax:
+df -h
+Example:
+df -h
+Output:
+Filesystem      Size  Used Avail Use%
+/dev/sda1        50G   20G   28G 42%
+
+21. free -m
+Purpose: Show memory usage
+Syntax:
+free -m
+Example:
+free -m
+Output:
+              total   used   free
+Mem:           8192   2500   4000
+Swap:          2048      0   2048
+
+22. whoami
+Purpose: Show current username
+Syntax:
+whoami
+Example:
+whoami
+Output:
+sumanth
+
+23. hostname
+Purpose: Show system hostname
+Syntax:
+hostname
+Example:
+hostname
+Output:
+ubuntu
+
+24. nano
+Purpose: Open file editor / shell scripting
+Syntax:
+nano filename
+Example:
+nano day1.sh
+Output:
+GNU nano editor opens
+
+Example Script:
+#!/bin/bash
+echo "Hello Linux"
+
+25. ./filename
+Purpose: Run executable file
+Syntax:
+./filename
+Example:
+./day1.sh
+Output:
+Hello Linux
+
+26. bash filename.sh / sh filename.sh
+Purpose: Run shell script directly
+Syntax:
+bash filename.sh
+sh filename.sh
+Example:
+bash day1.sh
+Output:
+Hello Linux
+
+27. pwd
+Purpose: Show present working directory
+Syntax:
+pwd
+Example:
+pwd
+Output:
+/home/sumanth/devops-roadmap
+
+28. cd
+Purpose: Change directory
+Syntax:
+cd directory_name
+Example:
+cd projects
+Output:
+(no output if successful)
+
+29. echo
+Purpose: Print text or variables
+Syntax:
+echo "text"
+Example:
+echo "Hello Cloud"
+Output:
+Hello Cloud
+
+30. wget
+Purpose: Download files from internet
+Syntax:
+wget URL
+Example:
+wget https://example.com/file.zip
+Output:
+Saving to: 'file.zip'
+
+31. curl
+Purpose: Transfer data / test APIs
+Syntax:
+curl URL
+Example:
+curl https://google.com
+Output:
+HTML response
+
+32. ping
+Purpose: Check network connectivity
+Syntax:
+ping hostname
+Example:
+ping google.com
+Output:
+64 bytes from google.com
+
+33. traceroute
+Purpose: Track network route
+Syntax:
+traceroute hostname
+Example:
+traceroute google.com
+Output:
+Shows hop-by-hop route
+
+34. nslookup
+Purpose: DNS lookup
+Syntax:
+nslookup domain
+Example:
+nslookup google.com
+Output:
+IP address details
+
+35. dig
+Purpose: Advanced DNS lookup
+Syntax:
+dig domain
+Example:
+dig google.com
+Output:
+DNS query details
+
+36. ssh
+Purpose: Remote server login
+Syntax:
+ssh user@host
+Example:
+ssh ubuntu@192.168.1.10
+Output:
+Connected to remote server
+
+37. scp
+Purpose: Securely copy files between systems
+Syntax:
+scp source destination
+Example:
+scp app.zip ubuntu@server:/home/ubuntu
+Output:
+File transferred
+
+38. rsync
+Purpose: Sync files efficiently
+Syntax:
+rsync options source destination
+Example:
+rsync -av project/ backup/
+Output:
+Files synced
+
+39. tar
+Purpose: Archive/compress files
+Syntax:
+tar options filename
+Example:
+tar -czvf backup.tar.gz project/
+Output:
+Compressed archive created
+
+40. unzip
+Purpose: Extract zip files
+Syntax:
+unzip filename.zip
+Example:
+unzip app.zip
+Output:
+Files extracted
+
+41. systemctl
+Purpose: Manage Linux services
+Syntax:
+systemctl command service
+Example:
+systemctl status nginx
+Output:
+Service status shown
+
+42. service
+Purpose: Start/stop services
+Syntax:
+service service_name action
+Example:
+service nginx restart
+Output:
+Service restarted
+
+43. journalctl
+Purpose: View logs
+Syntax:
+journalctl
+Example:
+journalctl -u nginx
+Output:
+Service logs
+
+44. chmod 777 (not recommended in production)
+Purpose: Full permissions
+Syntax:
+chmod 777 filename
+Example:
+chmod 777 deploy.sh
+Output:
+Permissions changed
+
+45. chown
+Purpose: Change ownership
+Syntax:
+chown user:group file
+Example:
+chown ubuntu:ubuntu app.sh
+Output:
+Ownership changed
+
+46. kill
+Purpose: Stop process
+Syntax:
+kill PID
+Example:
+kill 2345
+Output:
+Process terminated
+
+47. kill -9
+Purpose: Force kill process
+Syntax:
+kill -9 PID
+Example:
+kill -9 2345
+Output:
+Process forcefully terminated
+
+48. netstat
+Purpose: Show network connections
+Syntax:
+netstat options
+Example:
+netstat -tulnp
+Output:
+Listening ports
+
+49. ss
+Purpose: Modern netstat replacement
+Syntax:
+ss options
+Example:
+ss -tulnp
+Output:
+Open ports and sockets
+
+50. ip addr
+Purpose: Show IP address
+Syntax:
+ip addr
+Example:
+ip addr
+Output:
+Network interface details
+
+51. df -Th
+Purpose: Show disk + filesystem type
+Syntax:
+df -Th
+Example:
+df -Th
+Output:
+Disk usage + ext4/xfs info
+
+52. du -sh
+Purpose: Check folder size
+Syntax:
+du -sh foldername
+Example:
+du -sh projects
+Output:
+2.4G projects
+
+53. mount
+Purpose: Mount filesystem
+Syntax:
+mount device directory
+Example:
+mount /dev/sdb1 /mnt
+Output:
+Mounted successfully
+
+54. cron
+Purpose: Schedule tasks
+Syntax:
+crontab -e
+Example:
+crontab -e
+Output:
+Cron editor opens
+
+Example cron:
+0 2 * * * /home/sumanth/backup.sh
+
+55. env
+Purpose: Show environment variables
+Syntax:
+env
+Example:
+env
+Output:
+PATH=/usr/bin...
+
+56. export
+Purpose: Set environment variables
+Syntax:
+export VAR=value
+Example:
+export JAVA_HOME=/usr/lib/jvm/java-17
+Output:
+(no output)
+
+57. history
+Purpose: Show command history
+Syntax:
+history
+Example:
+history
+Output:
+1 ls
+2 cd projects
+
+58. alias
+Purpose: Create shortcuts
+Syntax:
+alias name='command'
+Example:
+alias ll='ls -la'
+Output:
+Shortcut created
+
+59. docker
+Purpose: Container management
+Syntax:
+docker command
+Example:
+docker ps
+Output:
+Running containers list
+
+60. kubectl
+Purpose: Kubernetes management
+Syntax:
+kubectl command
+Example:
+kubectl get pods
+Output:
+Running pods list
+
+61. aws cli
+Purpose: AWS cloud management
+Syntax:
+aws service command
+Example:
+aws s3 ls
+Output:
+S3 bucket list
+
+62. terraform
+Purpose: Infrastructure as Code
+Syntax:
+terraform command
+Example:
+terraform init
+Output:
+Terraform initialized
+
+63. ansible
+Purpose: Configuration management
+Syntax:
+ansible command
+Example:
+ansible all -m ping
+Output:
+Hosts reachable
+
+64. git status
+Purpose: Check git changes
+Syntax:
+git status
+Example:
+git status
+Output:
+Modified files list
+
+65. git add
+Purpose: Stage changes
+Syntax:
+git add .
+Example:
+git add .
+Output:
+(no output)
+
+66. git commit
+Purpose: Save changes
+Syntax:
+git commit -m "message"
+Example:
+git commit -m "day1 progress"
+Output:
+Commit successful
+
+67. git push
+Purpose: Push code to GitHub
+Syntax:
+git push origin main
+Example:
+git push origin main
+Output:
+Code uploaded
