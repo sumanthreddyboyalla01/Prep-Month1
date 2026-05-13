@@ -1,0 +1,398 @@
+Hello, this is Sumanth. Today marks Day 2 of my Cloud Architect journey.
+
+Today’s focus: Linux administration, permissions, processes, package management, services, logs, and networking fundamentals for Cloud/DevOps.
+
+1. pwd
+Purpose: Show present working directory
+Syntax:
+pwd
+Example:
+pwd
+Output:
+/home/sumanth
+
+2. cd
+Purpose: Change directory
+Syntax:
+cd directory_name
+Example:
+cd /etc
+Output:
+(no output if successful)
+
+3. id
+Purpose: Show user ID and group details
+Syntax:
+id
+Example:
+id
+Output:
+uid=1000(sumanth) gid=1000(sumanth) groups=1000(sumanth),27(sudo)
+
+4. groups
+Purpose: Show groups current user belongs to
+Syntax:
+groups
+Example:
+groups
+Output:
+sumanth sudo docker
+
+5. whoami
+Purpose: Show current username
+Syntax:
+whoami
+Example:
+whoami
+Output:
+sumanth
+
+6. ls -l
+Purpose: Check file permissions
+Syntax:
+ls -l
+Example:
+ls -l
+Output:
+-rw-r--r-- 1 sumanth sumanth 120 May 13 script.sh
+
+7. chmod
+Purpose: Change file permissions
+Syntax:
+chmod permission filename
+Example:
+chmod 755 script.sh
+Output:
+(no output)
+
+Permission Meaning:
+755 = owner full access, others read+execute
+644 = owner read+write, others read only
+777 = full access to everyone (unsafe)
+
+8. chown
+Purpose: Change file ownership
+Syntax:
+chown user:group filename
+Example:
+sudo chown sumanth:sumanth script.sh
+Output:
+(no output)
+
+9. ps
+Purpose: Show running processes
+Syntax:
+ps
+Example:
+ps
+Output:
+PID TTY          TIME CMD
+2345 pts/0    00:00:00 bash
+
+10. ps aux
+Purpose: Show all running processes
+Syntax:
+ps aux
+Example:
+ps aux
+Output:
+USER     PID %CPU %MEM COMMAND
+root       1  0.0  0.1 /sbin/init
+
+11. top
+Purpose: Real-time system monitoring
+Syntax:
+top
+Example:
+top
+Output:
+CPU usage
+Memory usage
+Running processes
+Load average
+Uptime
+
+Exit:
+q
+
+12. htop
+Purpose: Better interactive process monitor
+Syntax:
+htop
+Example:
+htop
+Output:
+Colorful live process dashboard
+
+Install:
+sudo apt install htop
+
+13. pgrep
+Purpose: Find process by name
+Syntax:
+pgrep process_name
+Example:
+pgrep nginx
+Output:
+2345
+
+14. kill
+Purpose: Stop process
+Syntax:
+kill PID
+Example:
+kill 2345
+Output:
+(no output)
+
+15. kill -9
+Purpose: Force kill process
+Syntax:
+kill -9 PID
+Example:
+kill -9 2345
+Output:
+Process terminated
+
+16. sleep
+Purpose: Pause process
+Syntax:
+sleep seconds
+Example:
+sleep 300
+Output:
+(waits for 300 seconds)
+
+17. sudo apt update
+Purpose: Refresh package list
+Syntax:
+sudo apt update
+Example:
+sudo apt update
+Output:
+Package lists updated
+
+18. sudo apt upgrade
+Purpose: Upgrade installed packages
+Syntax:
+sudo apt upgrade
+Example:
+sudo apt upgrade
+Output:
+Packages upgraded
+
+19. sudo apt install
+Purpose: Install packages
+Syntax:
+sudo apt install package_name
+Example:
+sudo apt install nginx
+Output:
+nginx installed
+
+20. sudo apt remove
+Purpose: Remove packages
+Syntax:
+sudo apt remove package_name
+Example:
+sudo apt remove nginx
+Output:
+nginx removed
+
+21. apt list --installed
+Purpose: Show installed packages
+Syntax:
+apt list --installed
+Example:
+apt list --installed
+Output:
+bash
+curl
+nginx
+git
+
+22. systemctl status
+Purpose: Check service status
+Syntax:
+sudo systemctl status service_name
+Example:
+sudo systemctl status nginx
+Output:
+nginx active (running)
+
+23. systemctl start
+Purpose: Start service
+Syntax:
+sudo systemctl start service_name
+Example:
+sudo systemctl start nginx
+Output:
+(no output)
+
+24. systemctl stop
+Purpose: Stop service
+Syntax:
+sudo systemctl stop nginx
+Output:
+(no output)
+
+25. systemctl restart
+Purpose: Restart service
+Syntax:
+sudo systemctl restart nginx
+Output:
+(no output)
+
+26. systemctl enable
+Purpose: Start service on boot
+Syntax:
+sudo systemctl enable nginx
+Output:
+Created symlink
+
+27. curl localhost
+Purpose: Test local web server
+Syntax:
+curl localhost
+Example:
+curl localhost
+Output:
+<html>Welcome to nginx</html>
+
+28. journalctl
+Purpose: View system logs
+Syntax:
+journalctl
+Example:
+journalctl
+Output:
+System logs
+
+29. journalctl -u nginx
+Purpose: View nginx logs
+Syntax:
+journalctl -u nginx
+Output:
+nginx service logs
+
+30. tail
+Purpose: Show end of file
+Syntax:
+tail filename
+Example:
+tail /var/log/syslog
+Output:
+Recent logs
+
+31. tail -f
+Purpose: Live log monitoring
+Syntax:
+tail -f filename
+Example:
+tail -f /var/log/syslog
+Output:
+Live updating logs
+
+32. ip addr
+Purpose: Show network interfaces and IP
+Syntax:
+ip addr
+Example:
+ip addr
+Output:
+inet 192.168.1.20
+
+33. hostname -I
+Purpose: Show IP address
+Syntax:
+hostname -I
+Example:
+hostname -I
+Output:
+192.168.1.20
+
+34. ping
+Purpose: Check connectivity
+Syntax:
+ping domain
+Example:
+ping google.com
+Output:
+64 bytes from google.com
+
+35. curl
+Purpose: Fetch webpage / API response
+Syntax:
+curl URL
+Example:
+curl https://google.com
+Output:
+HTML response
+
+36. nslookup
+Purpose: DNS lookup
+Syntax:
+nslookup domain
+Example:
+nslookup google.com
+Output:
+IP addresses
+
+37. ss -tulnp
+Purpose: Show open ports and listening services
+Syntax:
+ss -tulnp
+Example:
+ss -tulnp
+Output:
+tcp LISTEN 0 80 nginx
+
+38. Linux Filesystem Important Directories
+
+/       Root directory
+/home   User files
+/etc    Configuration files
+/var    Logs + variable data
+/tmp    Temporary files
+/usr    User programs
+/bin    Essential binaries
+/opt    Optional software
+/dev    Devices
+/proc   Process/system info
+
+39. Common Ports
+
+22    SSH
+80    HTTP
+443   HTTPS
+3306  MySQL
+5432  PostgreSQL
+
+40. Networking Concepts
+
+IP Address = Device address
+DNS = Domain name to IP translation
+TCP = Reliable communication
+UDP = Faster but no guarantee
+HTTP = Web traffic
+HTTPS = Secure web traffic
+
+Day 2 Build Task:
+linux-admin-toolkit.sh
+
+Example:
+#!/bin/bash
+echo "Linux Admin Toolkit"
+echo "User: $(whoami)"
+echo "Hostname: $(hostname)"
+echo "IP: $(hostname -I)"
+echo "Disk:"
+df -h
+echo "Memory:"
+free -m
+echo "Processes:"
+ps aux | head
+
+Run:
+chmod +x linux-admin-toolkit.sh
+./linux-admin-toolkit.sh
