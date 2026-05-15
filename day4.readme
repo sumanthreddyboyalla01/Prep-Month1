@@ -1,0 +1,326 @@
+Hello, this is Sumanth. Today marks Day 4 of my Cloud Architect journey.
+
+Today’s focus: Networking fundamentals, remote access, DNS resolution, ports, APIs, and troubleshooting.
+Date :15-05-2026
+Day :Friday
+
+1. ip addr
+Purpose: Show network interfaces + IP addresses
+
+Syntax:
+ip addr
+
+Example:
+ip addr
+
+Output:
+inet 192.168.1.25/24
+
+
+2. hostname -I
+Purpose: Show machine IP
+
+Syntax:
+hostname -I
+
+Output:
+192.168.1.25
+
+
+3. ping
+Purpose: Test connectivity
+
+Syntax:
+ping domain
+
+Example:
+ping google.com
+
+Output:
+64 bytes from google.com
+
+
+4. traceroute
+Purpose: Show packet route
+
+Syntax:
+traceroute domain
+
+Example:
+traceroute google.com
+
+Output:
+hop1
+hop2
+hop3
+
+
+5. curl
+Purpose: Fetch webpage/API data
+
+Syntax:
+curl URL
+
+Example:
+curl https://api.github.com
+
+Output:
+JSON response
+
+
+6. wget
+Purpose: Download files
+
+Syntax:
+wget URL
+
+Example:
+wget https://example.com/file.zip
+
+Output:
+Downloaded successfully
+
+
+7. nslookup
+Purpose: DNS lookup
+
+Syntax:
+nslookup google.com
+
+Output:
+IP address result
+
+
+8. dig
+Purpose: Advanced DNS query
+
+Syntax:
+dig google.com
+
+Output:
+DNS answer section
+
+
+9. host
+Purpose: Quick DNS lookup
+
+Syntax:
+host google.com
+
+Output:
+google.com has address ...
+
+
+10. ss -tulnp
+Purpose: Show open ports
+
+Syntax:
+ss -tulnp
+
+Output:
+tcp LISTEN 0 80 nginx
+
+
+11. netstat -tulnp
+Purpose: Legacy port check
+
+Syntax:
+netstat -tulnp
+
+
+12. nc
+Purpose: Network testing
+
+Syntax:
+nc -zv host port
+
+Example:
+nc -zv google.com 443
+
+Output:
+Connection successful
+
+
+13. telnet
+Purpose: Port testing
+
+Syntax:
+telnet host port
+
+Example:
+telnet google.com 80
+
+
+14. ssh
+Purpose: Remote login
+
+Syntax:
+ssh user@ip
+
+Example:
+ssh ubuntu@192.168.1.100
+
+Output:
+Remote shell access
+
+
+15. ssh-keygen
+Purpose: Generate SSH keys
+
+Syntax:
+ssh-keygen -t ed25519
+
+Output:
+Public/private key created
+
+
+16. ssh-copy-id
+Purpose: Copy SSH key to server
+
+Syntax:
+ssh-copy-id user@server
+
+
+17. scp
+Purpose: Secure file copy
+
+Syntax:
+scp source user@server:path
+
+Example:
+scp app.zip ubuntu@server:/home/ubuntu
+
+
+18. rsync
+Purpose: Efficient sync
+
+Syntax:
+rsync -av source destination
+
+Example:
+rsync -av project/ backup/
+
+
+19. Route check
+
+ip route
+
+Output:
+default via 192.168.1.1
+
+
+20. DNS config
+
+cat /etc/resolv.conf
+
+
+21. Public IP
+
+curl ifconfig.me
+
+
+22. HTTP request headers
+
+curl -I https://google.com
+
+
+23. HTTP methods
+
+GET
+POST
+PUT
+DELETE
+
+
+24. API GET example
+
+curl https://jsonplaceholder.typicode.com/posts/1
+
+
+25. API POST example
+
+curl -X POST https://jsonplaceholder.typicode.com/posts \
+-H "Content-Type: application/json" \
+-d '{"title":"cloud"}'
+
+
+26. JSON formatting
+
+curl api_url | jq
+
+
+27. Install jq
+
+sudo apt install jq
+
+
+28. OpenSSL test
+
+openssl s_client -connect google.com:443
+
+
+29. Firewall check
+
+sudo ufw status
+
+
+30. Enable firewall
+
+sudo ufw enable
+
+
+31. Allow SSH
+
+sudo ufw allow 22
+
+
+32. Allow HTTP
+
+sudo ufw allow 80
+
+
+33. Allow HTTPS
+
+sudo ufw allow 443
+
+
+34. Common Ports
+
+22 SSH
+53 DNS
+80 HTTP
+443 HTTPS
+3306 MySQL
+5432 PostgreSQL
+6379 Redis
+27017 MongoDB
+
+
+35. OSI Layers
+
+1 Physical
+2 Data Link
+3 Network
+4 Transport
+5 Session
+6 Presentation
+7 Application
+
+
+36. TCP vs UDP
+
+TCP = reliable
+UDP = faster
+
+
+37. HTTP Status Codes
+
+200 OK
+301 Redirect
+400 Bad Request
+401 Unauthorized
+403 Forbidden
+404 Not Found
+500 Server Error
+502 Bad Gateway
+503 Service Unavailable
