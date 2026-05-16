@@ -1,0 +1,170 @@
+🚀 DAY 5 — CONSOLIDATION & CAPSTONE PROJECT
+
+GOAL:
+Convert Linux + Bash + Networking learning into one real automation project.
+
+====================================================
+MORNING — REINFORCE WEAK AREAS
+====================================================
+
+1. /etc/passwd
+Purpose:
+Stores user account information
+
+Command:
+cat /etc/passwd
+
+Understand fields:
+username:x:UID:GID:comment:home:shell
+
+Example:
+sumanth:x:1000:1000:Sumanth:/home/sumanth:/bin/bash
+
+
+2. /etc/hosts
+Purpose:
+Local hostname to IP mapping
+
+Command:
+cat /etc/hosts
+
+Example:
+127.0.0.1 localhost
+127.0.1.1 ubuntu
+
+
+3. /etc/fstab
+Purpose:
+Filesystem mount configuration
+
+Command:
+cat /etc/fstab
+
+Understand:
+device mountpoint filesystem options dump pass
+
+
+4. awk practice
+Purpose:
+Text extraction
+
+Examples:
+
+Print first column:
+df -h | awk '{print $1}'
+
+Print memory line:
+free -m | awk 'NR==2'
+
+Print nginx processes:
+ps aux | awk '/nginx/'
+
+
+5. sed practice
+Purpose:
+Replace/edit text
+
+Examples:
+
+echo "cloud architect" | sed 's/cloud/devops/'
+
+Replace in file:
+sed 's/error/warning/g' logfile.txt
+
+
+6. Subnetting Practice
+
+192.168.1.0/24
+Subnet mask:
+255.255.255.0
+
+Usable hosts:
+192.168.1.1 → 192.168.1.254
+
+Broadcast:
+192.168.1.255
+
+
+10.0.0.0/16
+Subnet mask:
+255.255.0.0
+
+Usable:
+10.0.0.1 → 10.0.255.254
+
+Broadcast:
+10.0.255.255
+
+
+172.16.0.0/12
+Subnet mask:
+255.240.0.0
+
+Usable:
+172.16.0.1 → 172.31.255.254
+
+Broadcast:
+172.31.255.255
+
+
+====================================================
+AFTERNOON — CAPSTONE PROJECT
+====================================================
+
+Create:
+system-health-report.sh 
+
+#!/bin/bash
+
+LOGFILE="$/mnt/c/Sumanth-Prep/Prep-Month1/health-report.log"
+
+echo "===================================" >> $LOGFILE
+echo "Health Report - $(date)" >> $LOGFILE
+echo "===================================" >> $LOGFILE
+
+echo "Hostname:" >> $LOGFILE
+hostname >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "IP Address:" >> $LOGFILE
+hostname -I >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "CPU Load:" >> $LOGFILE
+top -bn1 | head -5 >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "Memory Usage:" >> $LOGFILE
+free -m >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "Disk Usage:" >> $LOGFILE
+df -h >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "Service Check:" >> $LOGFILE
+
+if systemctl is-active --quiet nginx
+then
+    echo "nginx is running" >> $LOGFILE
+else
+    echo "nginx is NOT running" >> $LOGFILE
+fi
+
+if systemctl is-active --quiet ssh
+then
+    echo "ssh is running" >> $LOGFILE
+else
+    echo "ssh is NOT running" >> $LOGFILE
+fi
+
+echo "" >> $LOGFILE
+echo "DNS Lookup:" >> $LOGFILE
+nslookup google.com >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "API Response:" >> $LOGFILE
+curl -s https://api.github.com/users/octocat | jq '.login, .public_repos' >> $LOGFILE
+
+echo "" >> $LOGFILE
+echo "Health check complete." >> $LOGFILE
