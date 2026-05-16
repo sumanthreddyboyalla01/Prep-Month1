@@ -142,6 +142,7 @@ Output:
 ./hello.txt
 ./notes/day1.txt
 
+
 15. ls -l
 Purpose: Check file permissions
 Syntax:

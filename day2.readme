@@ -201,6 +201,7 @@ sudo apt remove nginx
 Output:
 nginx removed
 
+
 21. apt list --installed
 Purpose: Show installed packages
 Syntax:
