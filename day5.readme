@@ -170,3 +170,6 @@ curl -s https://api.github.com/users/octocat | jq '.login, .public_repos' >> $LO
 
 echo "" >> $LOGFILE
 echo "Health check complete." >> $LOGFILE
+
+
+Day 6 is Revision 
