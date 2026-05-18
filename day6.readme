@@ -1,0 +1,318 @@
+Hello, this is Sumanth. Today marks Day 6 of my Cloud Architect journey.
+Date : 17-05-2026
+Day : Sunday
+
+GOAL:
+Revision, reinforcement, and strengthening the foundation built during the first 5 days of my Cloud Architect preparation journey.
+
+====================================================
+LINUX FUNDAMENTALS REVISION
+====================================================
+
+1. Basic File & Directory Commands
+
+Commands:
+ls
+ls -la
+pwd
+cd
+mkdir
+rmdir
+touch
+cat
+cp
+mv
+rm
+
+Purpose:
+Navigation and file management in Linux.
+
+
+2. File Permissions
+
+Commands:
+chmod
+chown
+ls -l
+
+Purpose:
+Managing access control and ownership.
+
+Permission meanings:
+r = read
+w = write
+x = execute
+
+Examples:
+chmod 755 script.sh
+chmod 644 config.txt
+sudo chown sumanth:sumanth script.sh
+
+
+3. Linux Filesystem Revision
+
+Important directories:
+
+/       Root directory
+/home   User files
+/etc    Configuration files
+/var    Logs and variable data
+/tmp    Temporary files
+/usr    User programs
+/bin    Essential binaries
+/opt    Optional software
+/dev    Devices
+/proc   Process/system info
+
+
+====================================================
+LINUX ADMINISTRATION REVISION
+====================================================
+
+4. Process Monitoring
+
+Commands:
+ps
+ps aux
+top
+htop
+pgrep
+kill
+kill -9
+
+Examples:
+ps aux
+top
+kill 2345
+
+Purpose:
+Monitor and manage running processes.
+
+
+5. System Monitoring
+
+Commands:
+df -h
+free -m
+hostname
+whoami
+id
+groups
+
+Examples:
+df -h
+free -m
+hostname -I
+
+Purpose:
+Monitor system health and identity.
+
+
+6. Service Management
+
+Commands:
+systemctl status nginx
+systemctl start nginx
+systemctl stop nginx
+systemctl restart nginx
+systemctl enable nginx
+
+Purpose:
+Manage Linux services.
+
+
+7. Logs & Debugging
+
+Commands:
+journalctl
+journalctl -u nginx
+tail
+tail -f
+
+Examples:
+journalctl -u nginx
+tail -f /var/log/syslog
+
+Purpose:
+Debug service/system issues.
+
+
+====================================================
+NETWORKING REVISION
+====================================================
+
+8. Networking Commands
+
+Commands:
+ip addr
+hostname -I
+ping
+curl
+nslookup
+dig
+host
+ss -tulnp
+netstat
+traceroute
+
+Examples:
+ping google.com
+curl https://google.com
+nslookup github.com
+
+Purpose:
+Connectivity testing and troubleshooting.
+
+
+9. Networking Concepts
+
+Topics Revised:
+OSI Model
+TCP/IP
+TCP vs UDP
+DNS Resolution
+HTTP / HTTPS
+Routing
+Ports
+Private vs Public IP
+Subnetting
+
+
+10. Common Ports
+
+22    SSH
+53    DNS
+80    HTTP
+443   HTTPS
+3306  MySQL
+5432  PostgreSQL
+
+
+====================================================
+BASH SCRIPTING REVISION
+====================================================
+
+11. Variables
+
+Example:
+name="Sumanth"
+echo $name
+
+
+12. Conditions
+
+Example:
+if [ $num -gt 5 ]
+then
+ echo "Greater"
+fi
+
+
+13. Loops
+
+For loop:
+for i in 1 2 3 4 5
+do
+ echo $i
+done
+
+While loop:
+count=1
+
+while [ $count -le 5 ]
+do
+ echo $count
+ count=$((count+1))
+done
+
+
+14. Functions
+
+Example:
+greet() {
+ echo "Hello $1"
+}
+
+greet Sumanth
+
+
+15. Script Arguments
+
+Examples:
+$1
+$2
+$?
+
+Run:
+bash test.sh Sumanth
+
+
+16. Scheduling
+
+Commands:
+crontab -e
+crontab -l
+crontab -r
+
+
+17. Text Processing
+
+Commands:
+grep
+awk
+sed
+tee
+xargs
+
+Examples:
+grep "ERROR" app.log
+df -h | awk '{print $1}'
+echo "cloud" | sed 's/cloud/devops/'
+
+
+====================================================
+GIT & GITHUB REVISION
+====================================================
+
+18. Git Commands
+
+git init
+git status
+git add .
+git commit -m "message"
+git push
+git pull
+git branch
+git checkout
+git merge
+
+Purpose:
+Version control and collaboration.
+
+
+====================================================
+PROJECTS REVISED
+====================================================
+
+19. Scripts Reviewed
+
+system-info.sh
+linux-admin-toolkit.sh
+backup.sh
+disk-monitor.sh
+process-checker.sh
+dns-checker.sh
+network-toolkit.sh
+system-health-report.sh
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Revision helps retention.
+Repetition builds confidence.
+Strong Linux + Networking + Bash foundations are critical for Cloud & DevOps.
+Hands-on practice matters more than passive learning.
+
+Day 6 was focused on mastery through revision, not learning something new.

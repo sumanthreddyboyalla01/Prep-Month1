@@ -172,4 +172,3 @@ echo "" >> $LOGFILE
 echo "Health check complete." >> $LOGFILE
 
 
-Day 6 is Revision 

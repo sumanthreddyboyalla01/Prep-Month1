@@ -1,0 +1,341 @@
+Hello, this is Sumanth. Today marks Day 7 of my Cloud Architect journey.
+Date : 18-05-2026
+Day : Monday
+
+GOAL:
+Reinforce everything learned during Week 1 through hands-on revision, repeated practice, script improvements, and strengthening long-term retention.
+
+====================================================
+LINUX FUNDAMENTALS REVISION
+====================================================
+
+1. File & Directory Management
+
+Commands:
+ls
+ls -la
+pwd
+cd
+mkdir
+rmdir
+touch
+cat
+cp
+mv
+rm
+
+Examples:
+ls -la
+pwd
+mkdir test-project
+touch notes.txt
+
+Purpose:
+Reinforce Linux navigation and file handling confidence.
+
+
+2. File Permissions & Ownership
+
+Commands:
+chmod
+chown
+ls -l
+
+Examples:
+chmod 755 deploy.sh
+chmod 644 config.txt
+sudo chown sumanth:sumanth script.sh
+
+Concepts:
+r = read
+w = write
+x = execute
+
+Permission Types:
+755 → executable scripts
+644 → config files
+777 → insecure in production
+
+Purpose:
+Strengthen Linux permission understanding.
+
+
+3. Linux Filesystem Revision
+
+Directories Reviewed:
+
+/       Root
+/home   User files
+/etc    Configuration
+/var    Logs
+/tmp    Temporary
+/usr    Programs
+/bin    Essential commands
+/opt    Optional software
+/dev    Devices
+/proc   Process information
+
+Purpose:
+Understand Linux internals better.
+
+
+====================================================
+LINUX ADMINISTRATION REVISION
+====================================================
+
+4. Process Management
+
+Commands:
+ps
+ps aux
+top
+htop
+pgrep
+kill
+kill -9
+sleep
+
+Examples:
+ps aux
+top
+pgrep nginx
+kill 2345
+
+Purpose:
+Process troubleshooting and management.
+
+
+5. System Monitoring
+
+Commands:
+df -h
+free -m
+hostname
+hostname -I
+whoami
+id
+groups
+
+Examples:
+df -h
+free -m
+hostname
+
+Purpose:
+Monitor machine health.
+
+
+6. Service Management
+
+Commands:
+systemctl status nginx
+systemctl start nginx
+systemctl stop nginx
+systemctl restart nginx
+systemctl enable nginx
+
+Purpose:
+Manage Linux services confidently.
+
+
+7. Logs & Debugging
+
+Commands:
+journalctl
+journalctl -u nginx
+tail
+tail -f
+
+Examples:
+journalctl -u ssh
+tail -f /var/log/syslog
+
+Purpose:
+Debug service failures.
+
+
+====================================================
+NETWORKING REVISION
+====================================================
+
+8. Network Commands
+
+Commands:
+ip addr
+hostname -I
+ping
+curl
+nslookup
+dig
+host
+ss -tulnp
+netstat
+traceroute
+
+Examples:
+ping google.com
+curl https://api.github.com
+nslookup google.com
+dig github.com
+
+Purpose:
+Connectivity + troubleshooting.
+
+
+9. Networking Concepts Revised
+
+OSI Model
+TCP/IP
+TCP vs UDP
+DNS Resolution
+HTTP
+HTTPS
+Routing
+Ports
+Private IP
+Public IP
+Subnetting
+Packet Flow
+
+
+10. Ports Reviewed
+
+22    SSH
+53    DNS
+80    HTTP
+443   HTTPS
+3306  MySQL
+5432  PostgreSQL
+6379  Redis
+27017 MongoDB
+
+
+====================================================
+BASH SCRIPTING REVISION
+====================================================
+
+11. Variables
+
+Example:
+name="Sumanth"
+echo $name
+
+
+12. Conditions
+
+if [ $num -gt 5 ]
+then
+ echo "Greater"
+fi
+
+
+13. Loops
+
+For:
+for i in 1 2 3 4 5
+do
+ echo $i
+done
+
+While:
+count=1
+
+while [ $count -le 5 ]
+do
+ echo $count
+ count=$((count+1))
+done
+
+
+14. Functions
+
+greet() {
+ echo "Hello $1"
+}
+
+greet Sumanth
+
+
+15. Script Arguments
+
+$1
+$2
+$?
+
+Run:
+bash test.sh hello
+
+
+16. Scheduling
+
+crontab -e
+crontab -l
+crontab -r
+
+
+17. Text Processing
+
+grep
+awk
+sed
+tee
+xargs
+
+Examples:
+grep "ERROR" logs.txt
+df -h | awk '{print $1}'
+echo "linux" | sed 's/linux/cloud/'
+
+
+====================================================
+GIT & GITHUB REVISION
+====================================================
+
+18. Git Commands
+
+git init
+git status
+git add .
+git commit -m "revision"
+git push
+git pull
+git branch
+git checkout
+git merge
+
+Purpose:
+Version control mastery.
+
+
+====================================================
+PROJECTS REVISITED & IMPROVED
+====================================================
+
+19. Reviewed Scripts
+
+system-info.sh
+linux-admin-toolkit.sh
+backup.sh
+disk-monitor.sh
+process-checker.sh
+dns-checker.sh
+network-toolkit.sh
+system-health-report.sh
+
+Improvements:
+- cleaner outputs
+- added comments
+- improved readability
+- better command structure
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Revision strengthens memory.
+Hands-on repetition builds speed.
+Confidence comes from repeated execution.
+Week 1 built a strong Linux + Networking + Bash + Git foundation.
+
+Day 7 was about consistency, discipline, and mastery through repetition.
