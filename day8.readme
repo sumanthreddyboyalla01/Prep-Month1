@@ -1,0 +1,439 @@
+Hello, this is Sumanth. Today marks Day 8 of my Cloud Architect journey.
+Date : 19-05-2026
+Day : Tuesday
+
+GOAL:
+Deep dive into Linux user management, permissions, process control, and build a real interactive Linux administration automation script.
+
+====================================================
+LINUX USER MANAGEMENT
+====================================================
+
+1. Create New User
+
+Command:
+sudo useradd username
+
+Example:
+sudo useradd devuser
+
+Purpose:
+Create a new Linux user account.
+
+
+2. Set Password
+
+Command:
+sudo passwd username
+
+Example:
+sudo passwd devuser
+
+Output:
+New password:
+Retype new password:
+passwd: password updated successfully
+
+Purpose:
+Assign password to a Linux user.
+
+
+3. Delete User
+
+Command:
+sudo userdel username
+
+Example:
+sudo userdel devuser
+
+Purpose:
+Delete an existing user.
+
+
+4. Delete User with Home Directory
+
+Command:
+sudo userdel -r username
+
+Example:
+sudo userdel -r devuser
+
+Purpose:
+Delete user along with home directory and files.
+
+
+5. Add User to sudo Group
+
+Command:
+sudo usermod -aG sudo username
+
+Example:
+sudo usermod -aG sudo devuser
+
+Check:
+groups devuser
+
+Output:
+devuser : devuser sudo
+
+Purpose:
+Grant administrator privileges.
+
+
+6. Switch User
+
+Commands:
+su username
+sudo su
+sudo -i
+
+Examples:
+su devuser
+sudo su
+
+Purpose:
+Switch between users or become root user.
+
+
+====================================================
+LINUX PERMISSIONS DEEP DIVE
+====================================================
+
+7. File Ownership
+
+Commands:
+ls -l
+chown
+
+Examples:
+ls -l
+sudo chown sumanth:sumanth file.txt
+
+Purpose:
+Manage file ownership.
+
+
+8. Symbolic chmod
+
+Examples:
+chmod u+x script.sh
+chmod g+w file.txt
+chmod o-r secret.txt
+
+Meaning:
+u = user
+g = group
+o = others
+r = read
+w = write
+x = execute
+
+Purpose:
+Change permissions symbolically.
+
+
+9. Numeric chmod
+
+Examples:
+chmod 755 deploy.sh
+chmod 644 config.txt
+chmod 700 private.sh
+
+Meaning:
+7 = rwx
+6 = rw-
+5 = r-x
+4 = r--
+0 = ---
+
+Purpose:
+Change permissions numerically.
+
+
+10. Special Permissions
+
+setuid
+
+Command:
+chmod u+s filename
+
+Example:
+chmod u+s myscript.sh
+
+Purpose:
+Run file with owner's privileges.
+
+
+setgid
+
+Command:
+chmod g+s directory
+
+Example:
+chmod g+s shared/
+
+Purpose:
+Files inherit group ownership.
+
+
+sticky bit
+
+Command:
+chmod +t directory
+
+Example:
+chmod +t /tmp
+
+Purpose:
+Only file owner can delete files in shared directories.
+
+
+====================================================
+PROCESS MANAGEMENT
+====================================================
+
+11. View Running Processes
+
+Commands:
+ps
+ps aux
+top
+htop
+
+Examples:
+ps aux
+top
+
+Purpose:
+Monitor active system processes.
+
+
+12. Find Specific Process
+
+Command:
+pgrep process_name
+
+Example:
+pgrep nginx
+
+Purpose:
+Find process ID quickly.
+
+
+13. Kill Process by PID
+
+Commands:
+kill PID
+kill -9 PID
+
+Examples:
+kill 2345
+kill -9 2345
+
+Purpose:
+Stop running processes.
+
+
+14. Kill Process by Name
+
+Command:
+pkill process_name
+
+Example:
+pkill nginx
+
+Purpose:
+Kill process using process name.
+
+
+15. Process Priority
+
+Commands:
+nice
+renice
+
+Examples:
+nice -n 10 sleep 100
+renice 5 2345
+
+Purpose:
+Manage CPU scheduling priority.
+
+
+====================================================
+BACKGROUND JOB CONTROL
+====================================================
+
+16. Run in Background
+
+Command:
+command &
+
+Example:
+sleep 300 &
+
+Purpose:
+Run process in background.
+
+
+17. Keep Running After Logout
+
+Command:
+nohup command &
+
+Example:
+nohup python app.py &
+
+Purpose:
+Keep process running after terminal closes.
+
+
+18. Detach Process
+
+Command:
+disown
+
+Purpose:
+Detach process from shell session.
+
+
+19. View Jobs
+
+Command:
+jobs
+
+Purpose:
+See background jobs.
+
+
+20. Foreground Job
+
+Command:
+fg
+
+Purpose:
+Bring background job to foreground.
+
+
+21. Resume Background Job
+
+Command:
+bg
+
+Purpose:
+Resume stopped process in background.
+
+
+====================================================
+PORT & PROCESS TROUBLESHOOTING
+====================================================
+
+22. Check Port Usage
+
+Command:
+ss -tulnp | grep :80
+
+Examples:
+ss -tulnp | grep :22
+ss -tulnp | grep :443
+ss -tulnp | grep :3306
+
+Purpose:
+Check which process is using a specific port.
+
+
+====================================================
+BUILD PROJECT
+====================================================
+
+23. Interactive Linux Administration Script
+
+Create:
+user-management.sh
+
+Code:
+
+#!/bin/bash
+
+while true
+do
+ echo "===== USER MANAGEMENT MENU ====="
+ echo "1. Create User"
+ echo "2. Add User to sudo Group"
+ echo "3. Set Password"
+ echo "4. List Users"
+ echo "5. Delete User"
+ echo "6. Exit"
+
+ read -p "Choose option: " choice
+
+ case $choice in
+   1)
+     read -p "Enter username: " username
+     sudo useradd "$username"
+     echo "User created successfully"
+     ;;
+
+   2)
+     read -p "Enter username: " username
+     sudo usermod -aG sudo "$username"
+     echo "User added to sudo group"
+     ;;
+
+   3)
+     read -p "Enter username: " username
+     sudo passwd "$username"
+     ;;
+
+   4)
+     cut -d: -f1 /etc/passwd
+     ;;
+
+   5)
+     read -p "Enter username: " username
+     sudo userdel -r "$username"
+     echo "User deleted successfully"
+     ;;
+
+   6)
+     echo "Exiting..."
+     exit
+     ;;
+
+   *)
+     echo "Invalid option"
+     ;;
+ esac
+
+done
+
+
+====================================================
+RUN SCRIPT
+====================================================
+
+chmod +x user-management.sh
+./user-management.sh
+
+
+====================================================
+GIT COMMANDS
+====================================================
+
+git add .
+git commit -m "Day 8 Linux deep dive users permissions processes"
+git push
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Linux user management is critical for cloud administration.
+Permissions directly impact security.
+Process control is essential for troubleshooting.
+Background job handling is useful for automation.
+Port troubleshooting helps identify service conflicts.
+Interactive bash scripting improves real-world Linux administration skills.
+
+Day 8 focused on practical Linux administration fundamentals required for Cloud & DevOps engineering.

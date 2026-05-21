@@ -1,0 +1,301 @@
+Hello, this is Sumanth. Today marks Day 9 of my Cloud Architect journey.
+Date : 20-05-2026
+Day : Wednesday
+
+GOAL:
+Build cloud fundamentals, understand AWS core concepts, and achieve the first milestone in the Cloud Architect journey through certification-based learning.
+
+====================================================
+AWS CLOUD FUNDAMENTALS
+====================================================
+
+1. What is Cloud Computing
+
+Definition:
+Cloud computing is the delivery of computing services such as servers, storage, databases, networking, software, and analytics over the internet.
+
+Purpose:
+Access resources on demand without managing physical infrastructure.
+
+
+2. Cloud Computing Benefits
+
+Benefits:
+Scalability
+Elasticity
+High Availability
+Cost Optimization
+Global Reach
+Pay-as-you-go pricing
+Faster deployment
+
+Purpose:
+Understand why organizations adopt cloud solutions.
+
+
+3. Cloud Service Models
+
+IaaS:
+Infrastructure as a Service
+
+Examples:
+AWS EC2
+Virtual Machines
+Storage
+
+Purpose:
+Manage infrastructure resources.
+
+
+PaaS:
+Platform as a Service
+
+Examples:
+Application hosting platforms
+
+Purpose:
+Focus on application deployment without infrastructure management.
+
+
+SaaS:
+Software as a Service
+
+Examples:
+Gmail
+Office 365
+Salesforce
+
+Purpose:
+Consume ready-made software over the internet.
+
+
+====================================================
+AWS CORE CONCEPTS
+====================================================
+
+4. AWS Global Infrastructure
+
+Concepts:
+Regions
+Availability Zones
+Edge Locations
+
+Purpose:
+Understand AWS physical/global architecture.
+
+
+Definitions:
+
+Region:
+Geographical area containing AWS data centers
+
+Availability Zone:
+Isolated data center location inside a region
+
+Edge Location:
+Content delivery locations closer to users
+
+
+5. Shared Responsibility Model
+
+AWS Responsibilities:
+Physical security
+Infrastructure
+Networking hardware
+Managed services backend
+
+Customer Responsibilities:
+Applications
+Operating systems
+Passwords
+Data
+Configurations
+Access management
+
+Purpose:
+Understand security ownership in cloud.
+
+
+====================================================
+AWS CORE SERVICES AWARENESS
+====================================================
+
+6. Compute
+
+Service:
+Amazon EC2
+
+Purpose:
+Virtual servers in cloud.
+
+
+7. Storage
+
+Services:
+Amazon S3
+Amazon EBS
+Amazon Glacier
+
+Purpose:
+Object storage
+Block storage
+Archive storage
+
+
+8. Database
+
+Services:
+Amazon RDS
+Amazon DynamoDB
+
+Purpose:
+Managed relational and NoSQL databases.
+
+
+9. Networking
+
+Services:
+Amazon VPC
+Route 53
+CloudFront
+
+Purpose:
+Networking, DNS, CDN.
+
+
+10. Security
+
+Services:
+IAM
+Security Groups
+AWS Shield
+AWS WAF
+
+Purpose:
+Identity and protection.
+
+
+====================================================
+AWS EDUCATE LEARNING MILESTONE
+====================================================
+
+11. Certification Achievement
+
+Completed:
+AWS Educate Cloud Computing 101
+
+Achievement:
+AWS Educate Introduction to Cloud 101 Training Badge
+
+Purpose:
+Build official foundational cloud understanding.
+
+
+Topics Reinforced:
+Cloud basics
+AWS ecosystem awareness
+Cloud terminology
+Service understanding
+Security responsibility model
+
+
+====================================================
+CONTINUED FOUNDATION REVISION
+====================================================
+
+12. Linux Concepts Reinforced
+
+Topics:
+Linux commands
+permissions
+users
+processes
+service management
+
+Purpose:
+Cloud workloads often run on Linux systems.
+
+
+13. Networking Concepts Reinforced
+
+Topics:
+OSI Model
+TCP/IP
+DNS
+HTTP
+HTTPS
+Ports
+Routing
+Subnetting
+
+Purpose:
+Networking is fundamental to cloud architecture.
+
+
+14. Bash Scripting Reinforced
+
+Topics:
+automation
+shell scripting
+cron jobs
+text processing
+
+Purpose:
+Automation is essential in cloud engineering.
+
+
+15. Git & GitHub Reinforced
+
+Topics:
+version control
+branching
+commits
+push
+pull
+
+Purpose:
+Track infrastructure/application code professionally.
+
+
+====================================================
+COMMANDS PRACTICED
+====================================================
+
+Linux:
+whoami
+hostname
+df -h
+free -m
+
+Networking:
+ping google.com
+curl https://aws.amazon.com
+nslookup amazon.com
+
+Git:
+git status
+git add .
+git commit
+git push
+
+
+====================================================
+GIT COMMANDS
+====================================================
+
+git add .
+git commit -m "Day 9 AWS cloud fundamentals and first cloud badge"
+git push
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Cloud computing is built on strong Linux and networking fundamentals.
+AWS architecture is structured around global infrastructure and shared responsibility.
+Cloud services abstract infrastructure complexity.
+Certification milestones validate learning progress.
+Consistency is creating momentum in the Cloud Architect journey.
+
+Day 9 marked the first official AWS milestone in the journey.
