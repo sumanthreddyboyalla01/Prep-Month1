@@ -69,3 +69,232 @@ API Response:
 8
 
 Health check complete.
+===================================
+Health Report - Fri May 22 09:00:08 IST 2026
+===================================
+Hostname:
+Sumanth
+
+IP Address:
+172.31.59.205 172.17.0.1 
+
+CPU Load:
+top - 09:00:08 up 27 min,  2 users,  load average: 0.00, 0.00, 0.00
+Tasks:  52 total,   1 running,  51 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  0.0 sy,  0.0 ni, 99.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7788.2 total,   5991.4 free,   1335.7 used,    726.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6452.5 avail Mem 
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            7788        1334        5992          85         726        6453
+Swap:           2048           0        2048
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  580K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sde                                  137M   72M   54M  58% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                828M  828M     0 100% /mnt/wsl/docker-desktop/cli-tools
+drivers                                   379G  118G  261G  32% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  3.0G  953G   1% /
+none                                      3.9G   76K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.8G  2.7M  3.8G   1% /init
+none                                      3.9G  988K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G   84K  3.9G   1% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       379G  118G  261G  32% /mnt/c
+D:\                                        97G  2.4G   95G   3% /mnt/d
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2185
+snapfuse                                   64M   64M     0 100% /snap/core20/2866
+snapfuse                                   74M   74M     0 100% /snap/core22/2411
+snapfuse                                   67M   67M     0 100% /snap/core24/1587
+snapfuse                                   67M   67M     0 100% /snap/core24/1643
+snapfuse                                  149M  149M     0 100% /snap/docker/3505
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3792
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3804
+snapfuse                                   50M   50M     0 100% /snap/snapd/26865
+snapfuse                                   37M   37M     0 100% /snap/terraform/877
+snapfuse                                   37M   37M     0 100% /snap/terraform/885
+tmpfs                                     779M   20K  779M   1% /run/user/1000
+tmpfs                                     779M   20K  779M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  379G  118G  261G  32% /Docker/host
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2188
+
+Service Check:
+nginx is NOT running
+ssh is NOT running
+
+DNS Lookup:
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.251.221.206
+;; Got recursion not available from 10.255.255.254
+Name:	google.com
+Address: 2404:6800:4007:831::200e
+
+
+API Response:
+"octocat"
+8
+
+Health check complete.
+===================================
+Health Report - Fri May 22 10:00:08 IST 2026
+===================================
+Hostname:
+Sumanth
+
+IP Address:
+172.31.59.205 172.17.0.1 
+
+CPU Load:
+top - 10:00:08 up  1:21,  2 users,  load average: 0.00, 0.00, 0.00
+Tasks:  49 total,   1 running,  48 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  1.1 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7788.2 total,   5906.6 free,   1357.2 used,    790.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6431.0 avail Mem 
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            7788        1355        5908          86         790        6432
+Swap:           2048           0        2048
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  580K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sde                                  137M   72M   54M  58% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                828M  828M     0 100% /mnt/wsl/docker-desktop/cli-tools
+drivers                                   379G  118G  261G  32% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  3.0G  953G   1% /
+none                                      3.9G   76K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.8G  2.7M  3.8G   1% /init
+none                                      3.9G  984K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G   84K  3.9G   1% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       379G  118G  261G  32% /mnt/c
+D:\                                        97G  2.4G   95G   3% /mnt/d
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2185
+snapfuse                                   64M   64M     0 100% /snap/core20/2866
+snapfuse                                   74M   74M     0 100% /snap/core22/2411
+snapfuse                                   67M   67M     0 100% /snap/core24/1587
+snapfuse                                   67M   67M     0 100% /snap/core24/1643
+snapfuse                                  149M  149M     0 100% /snap/docker/3505
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3792
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3804
+snapfuse                                   50M   50M     0 100% /snap/snapd/26865
+snapfuse                                   37M   37M     0 100% /snap/terraform/877
+snapfuse                                   37M   37M     0 100% /snap/terraform/885
+tmpfs                                     779M   20K  779M   1% /run/user/1000
+tmpfs                                     779M   20K  779M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  379G  118G  261G  32% /Docker/host
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2188
+
+Service Check:
+nginx is NOT running
+ssh is NOT running
+
+DNS Lookup:
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.251.222.142
+Name:	google.com
+Address: 2404:6800:4007:832::200e
+
+
+API Response:
+"octocat"
+8
+
+Health check complete.
+===================================
+Health Report - Fri May 22 11:00:04 IST 2026
+===================================
+Hostname:
+Sumanth
+
+IP Address:
+172.31.59.205 172.17.0.1 
+
+CPU Load:
+top - 11:00:04 up  2:16,  2 users,  load average: 0.04, 0.06, 0.17
+Tasks:  51 total,   1 running,  50 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.5 us,  1.5 sy,  0.0 ni, 98.1 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7788.2 total,   5903.1 free,   1368.9 used,    783.3 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6419.3 avail Mem 
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            7788        1367        5903          87         784        6420
+Swap:           2048           0        2048
+
+Disk Usage:
+Filesystem                                Size  Used Avail Use% Mounted on
+none                                      3.9G     0  3.9G   0% /usr/lib/modules/6.6.87.2-microsoft-standard-WSL2
+none                                      3.9G  4.0K  3.9G   1% /mnt/wsl
+none                                      3.9G  580K  3.9G   1% /mnt/wsl/docker-desktop/shared-sockets/host-services
+/dev/sde                                  137M   72M   54M  58% /mnt/wsl/docker-desktop/docker-desktop-user-distro
+/dev/loop0                                828M  828M     0 100% /mnt/wsl/docker-desktop/cli-tools
+drivers                                   379G  122G  257G  33% /usr/lib/wsl/drivers
+/dev/sdf                                 1007G  3.0G  953G   1% /
+none                                      3.9G   76K  3.9G   1% /mnt/wslg
+none                                      3.9G     0  3.9G   0% /usr/lib/wsl/lib
+rootfs                                    3.8G  2.7M  3.8G   1% /init
+none                                      3.9G  984K  3.9G   1% /run
+none                                      3.9G     0  3.9G   0% /run/lock
+none                                      3.9G   84K  3.9G   1% /run/shm
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/versions.txt
+none                                      3.9G   76K  3.9G   1% /mnt/wslg/doc
+C:\                                       379G  122G  257G  33% /mnt/c
+D:\                                        97G  2.4G   95G   3% /mnt/d
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2185
+snapfuse                                   64M   64M     0 100% /snap/core20/2866
+snapfuse                                   74M   74M     0 100% /snap/core22/2411
+snapfuse                                   67M   67M     0 100% /snap/core24/1587
+snapfuse                                   67M   67M     0 100% /snap/core24/1643
+snapfuse                                  149M  149M     0 100% /snap/docker/3505
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3792
+snapfuse                                   14M   14M     0 100% /snap/kubectl/3804
+snapfuse                                   50M   50M     0 100% /snap/snapd/26865
+snapfuse                                   37M   37M     0 100% /snap/terraform/877
+snapfuse                                   37M   37M     0 100% /snap/terraform/885
+tmpfs                                     779M   20K  779M   1% /run/user/1000
+tmpfs                                     779M   20K  779M   1% /run/user/0
+C:\Program Files\Docker\Docker\resources  379G  122G  257G  33% /Docker/host
+snapfuse                                   60M   60M     0 100% /snap/aws-cli/2188
+
+Service Check:
+nginx is NOT running
+ssh is NOT running
+
+DNS Lookup:
+Server:		10.255.255.254
+Address:	10.255.255.254#53
+
+Non-authoritative answer:
+Name:	google.com
+Address: 142.251.221.206
+Name:	google.com
+Address: 2404:6800:4007:832::200e
+
+
+API Response:
+"octocat"
+8
+
+Health check complete.
