@@ -1,0 +1,348 @@
+Hello, this is Sumanth. Today marks Day 12 of my Cloud Architect journey.
+Date : 23-05-2026
+Day : Saturday
+
+GOAL:
+Revision and reinforcement of all concepts learned from Day 8 to Day 11 to strengthen retention, improve practical understanding, and build confidence in cloud architecture fundamentals.
+
+====================================================
+DAY 8 REVISION — LINUX ADMINISTRATION
+====================================================
+
+1. User Management
+
+Commands:
+useradd
+passwd
+userdel
+usermod
+su
+sudo su
+groups
+id
+
+Examples:
+sudo useradd devuser
+sudo passwd devuser
+sudo usermod -aG sudo devuser
+sudo userdel -r devuser
+
+Purpose:
+Reinforce Linux user administration skills.
+
+
+2. File Permissions
+
+Commands:
+chmod
+chown
+ls -l
+
+Examples:
+chmod 755 script.sh
+chmod 644 config.txt
+chmod u+x deploy.sh
+sudo chown sumanth:sumanth file.txt
+
+Concepts:
+r = read
+w = write
+x = execute
+setuid
+setgid
+sticky bit
+
+Purpose:
+Strengthen Linux security fundamentals.
+
+
+3. Process Management
+
+Commands:
+ps
+ps aux
+top
+htop
+pgrep
+kill
+kill -9
+pkill
+nice
+renice
+
+Examples:
+pgrep nginx
+kill 1234
+pkill python
+nice -n 10 sleep 100
+
+Purpose:
+Manage and troubleshoot running processes.
+
+
+4. Background Jobs
+
+Commands:
+&
+nohup
+jobs
+fg
+bg
+disown
+
+Examples:
+sleep 300 &
+nohup python app.py &
+jobs
+
+Purpose:
+Understand background execution workflows.
+
+
+====================================================
+DAY 9 REVISION — AWS CLOUD FUNDAMENTALS
+====================================================
+
+5. Cloud Basics
+
+Topics:
+Cloud computing
+Scalability
+Elasticity
+High availability
+Cost optimization
+Pay-as-you-go model
+
+Purpose:
+Reinforce cloud fundamentals.
+
+
+6. Cloud Service Models
+
+IaaS
+PaaS
+SaaS
+
+Examples:
+EC2
+Application platforms
+Gmail / Salesforce
+
+Purpose:
+Understand cloud delivery models.
+
+
+7. AWS Core Concepts
+
+Topics:
+Regions
+Availability Zones
+Edge Locations
+Shared Responsibility Model
+
+Purpose:
+Understand AWS infrastructure design.
+
+
+8. AWS Services Awareness
+
+Compute:
+EC2
+
+Storage:
+S3
+EBS
+Glacier
+
+Database:
+RDS
+DynamoDB
+
+Networking:
+VPC
+Route 53
+CloudFront
+
+Security:
+IAM
+Security Groups
+WAF
+
+Purpose:
+Reinforce AWS ecosystem awareness.
+
+
+====================================================
+DAY 10 REVISION — ARCHITECTURE THINKING
+====================================================
+
+9. System Design Basics
+
+Topics:
+Scalable architecture
+Layered design
+Modular systems
+Separation of concerns
+Service communication
+
+Purpose:
+Develop architecture mindset.
+
+
+10. Security Fundamentals
+
+Topics:
+Authentication
+Authorization
+RBAC
+Access control
+Secure credential handling
+
+Purpose:
+Build secure engineering awareness.
+
+
+11. Deployment Readiness
+
+Topics:
+Containerization basics
+Environment isolation
+Deployment preparation
+Operational thinking
+
+Purpose:
+Understand production deployment concepts.
+
+
+12. Observability Awareness
+
+Topics:
+Logging
+Monitoring
+Debugging
+Operational troubleshooting
+
+Purpose:
+Production engineering awareness.
+
+
+====================================================
+DAY 11 REVISION — SAAS ARCHITECTURE THINKING
+====================================================
+
+13. SaaS Concepts
+
+Topics:
+Subscription SaaS
+Multi-tenant architecture
+Tenant isolation
+Scalable product thinking
+
+Purpose:
+Understand SaaS application architecture.
+
+
+14. Access Architecture
+
+Topics:
+RBAC
+Ownership validation
+Access boundaries
+Permission hierarchy
+
+Purpose:
+Secure enterprise architecture thinking.
+
+
+15. Product Architecture Concepts
+
+Topics:
+White-label SaaS
+Tenant-specific experiences
+Branded portal concepts
+Enterprise platform thinking
+
+Purpose:
+Understand product design architecture.
+
+
+16. Billing Lifecycle Awareness
+
+Topics:
+Subscription lifecycle
+Plan-based access
+Customer onboarding
+Access provisioning
+
+Purpose:
+Learn SaaS operational workflows.
+
+
+====================================================
+PRACTICAL REVISION COMMANDS
+====================================================
+
+17. Linux
+
+whoami
+hostname
+hostname -I
+df -h
+free -m
+ps aux
+top
+systemctl status ssh
+journalctl -u ssh
+
+
+18. Networking
+
+ping google.com
+curl https://aws.amazon.com
+nslookup amazon.com
+dig google.com
+ss -tulnp
+
+
+19. Git
+
+git status
+git add .
+git commit -m "revision"
+git push
+git pull
+git branch
+
+
+====================================================
+PROJECTS REVISITED
+====================================================
+
+20. Reviewed Scripts
+
+user-management.sh
+system-health-report.sh
+network-toolkit.sh
+backup.sh
+process-checker.sh
+dns-checker.sh
+linux-admin-toolkit.sh
+
+Improvements:
+cleaner structure
+better comments
+improved readability
+repeated execution for confidence
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Revision strengthens understanding.
+Cloud architecture requires strong Linux, networking, and security fundamentals.
+System design thinking improves with repetition.
+AWS concepts become easier when core infrastructure knowledge is strong.
+Consistency is building real engineering confidence.
+
+Day 12 was focused on revision, retention, and strengthening the Cloud Architect foundation.
