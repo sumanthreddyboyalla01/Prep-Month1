@@ -1,0 +1,411 @@
+Hello, this is Sumanth. Today marks Day 13 of my Cloud Architect journey.
+Date : 24-05-2026
+Day : Sunday
+
+GOAL:
+Complete full revision from Day 1 to Day 12, reinforce all fundamentals, improve retention, and strengthen confidence before moving deeper into cloud hands-on learning.
+
+====================================================
+LINUX FUNDAMENTALS REVISION
+====================================================
+
+1. File & Directory Management
+
+Commands:
+ls
+ls -la
+pwd
+cd
+mkdir
+rmdir
+touch
+cat
+cp
+mv
+rm
+
+Examples:
+ls -la
+pwd
+mkdir practice
+touch notes.txt
+
+Purpose:
+Reinforce Linux navigation and file handling.
+
+
+2. File Permissions & Ownership
+
+Commands:
+chmod
+chown
+ls -l
+
+Examples:
+chmod 755 script.sh
+chmod 644 config.txt
+sudo chown sumanth:sumanth file.txt
+
+Concepts:
+r = read
+w = write
+x = execute
+setuid
+setgid
+sticky bit
+
+Purpose:
+Strengthen Linux security basics.
+
+
+3. Linux Filesystem
+
+Directories:
+/
+ /home
+ /etc
+ /var
+ /tmp
+ /usr
+ /bin
+ /opt
+ /dev
+ /proc
+
+Purpose:
+Understand Linux internals.
+
+
+====================================================
+LINUX ADMINISTRATION REVISION
+====================================================
+
+4. User Management
+
+Commands:
+useradd
+passwd
+userdel
+usermod
+su
+sudo su
+groups
+id
+
+Examples:
+sudo useradd devuser
+sudo passwd devuser
+
+Purpose:
+Linux administration basics.
+
+
+5. Process Management
+
+Commands:
+ps
+ps aux
+top
+htop
+pgrep
+kill
+kill -9
+pkill
+nice
+renice
+
+Purpose:
+Troubleshoot and manage processes.
+
+
+6. Background Jobs
+
+Commands:
+&
+nohup
+jobs
+fg
+bg
+disown
+
+Purpose:
+Process control.
+
+
+7. System Monitoring
+
+Commands:
+df -h
+free -m
+hostname
+hostname -I
+whoami
+journalctl
+systemctl
+
+Purpose:
+System troubleshooting and monitoring.
+
+
+====================================================
+BASH SCRIPTING REVISION
+====================================================
+
+8. Bash Concepts
+
+Topics:
+variables
+conditions
+loops
+functions
+arguments
+cron jobs
+
+Examples:
+for loops
+while loops
+if conditions
+function calls
+
+Purpose:
+Automation fundamentals.
+
+
+9. Text Processing
+
+Commands:
+grep
+awk
+sed
+tee
+xargs
+
+Examples:
+grep "ERROR" logs.txt
+df -h | awk '{print $1}'
+echo "linux" | sed 's/linux/cloud/'
+
+Purpose:
+CLI data processing.
+
+
+====================================================
+NETWORKING REVISION
+====================================================
+
+10. Networking Commands
+
+Commands:
+ping
+curl
+nslookup
+dig
+host
+ip addr
+hostname -I
+ss -tulnp
+netstat
+traceroute
+
+Purpose:
+Networking troubleshooting.
+
+
+11. Networking Concepts
+
+OSI Model
+TCP/IP
+TCP vs UDP
+DNS
+HTTP
+HTTPS
+Ports
+Routing
+Subnetting
+Packet Flow
+Private vs Public IP
+
+Purpose:
+Cloud networking foundation.
+
+
+12. Ports Revised
+
+22 SSH
+53 DNS
+80 HTTP
+443 HTTPS
+3306 MySQL
+5432 PostgreSQL
+6379 Redis
+27017 MongoDB
+
+
+====================================================
+AWS CLOUD FUNDAMENTALS REVISION
+====================================================
+
+13. Cloud Basics
+
+Topics:
+Cloud computing
+Scalability
+Elasticity
+High availability
+Cost optimization
+Pay-as-you-go
+
+Purpose:
+Cloud foundation.
+
+
+14. Service Models
+
+IaaS
+PaaS
+SaaS
+
+Purpose:
+Cloud service understanding.
+
+
+15. AWS Concepts
+
+Regions
+Availability Zones
+Edge Locations
+Shared Responsibility Model
+
+Purpose:
+AWS architecture basics.
+
+
+16. AWS Core Services Awareness
+
+EC2
+S3
+EBS
+Glacier
+RDS
+DynamoDB
+VPC
+Route53
+CloudFront
+IAM
+Security Groups
+
+Purpose:
+AWS ecosystem awareness.
+
+
+====================================================
+ARCHITECTURE THINKING REVISION
+====================================================
+
+17. System Design Basics
+
+Topics:
+Scalable design
+Layered architecture
+Modular systems
+Service communication
+Environment-based configuration
+
+Purpose:
+Architecture mindset.
+
+
+18. Security Awareness
+
+Topics:
+Authentication
+Authorization
+RBAC
+Secure credential handling
+Application hardening
+
+Purpose:
+Security thinking.
+
+
+19. Deployment Readiness
+
+Topics:
+Containerization awareness
+Deployment concepts
+Environment separation
+Production thinking
+
+Purpose:
+Cloud deployment mindset.
+
+
+====================================================
+SAAS ARCHITECTURE REVISION
+====================================================
+
+20. SaaS Concepts
+
+Topics:
+Subscription model
+Multi-tenancy
+Tenant isolation
+White-label awareness
+Product scalability
+
+Purpose:
+Modern application architecture understanding.
+
+
+====================================================
+GIT & GITHUB REVISION
+====================================================
+
+21. Git Commands
+
+git init
+git status
+git add .
+git commit
+git push
+git pull
+git branch
+git checkout
+git merge
+
+Purpose:
+Version control mastery.
+
+
+====================================================
+PROJECTS REVISITED
+====================================================
+
+22. Scripts Reviewed
+
+system-info.sh
+linux-admin-toolkit.sh
+backup.sh
+disk-monitor.sh
+process-checker.sh
+dns-checker.sh
+network-toolkit.sh
+system-health-report.sh
+user-management.sh
+
+Improvements:
+repeated execution
+better understanding
+stronger command retention
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Revision creates mastery.
+Strong cloud engineers need Linux, networking, scripting, security, and architecture fundamentals.
+Repetition builds confidence and speed.
+Consistency matters more than rushing into advanced topics.
+
+Day 13 was a complete foundation reinforcement day before moving deeper into practical cloud engineering.
