@@ -1,0 +1,202 @@
+Hello, this is Sumanth. Today marks Day 14 of my Elite Software Engineering Journey.
+Date : 26-05-2026
+Day : Tuesday
+
+GOAL:
+Start the ₹50+ placement war plan by strengthening coding fundamentals, Python engineering, SQL basics, and core computer science concepts required for elite software engineering roles.
+
+====================================================
+DSA WAR — FOUNDATIONS
+====================================================
+
+1. Arrays
+
+Topics Covered:
+- traversal
+- insertion
+- deletion
+- searching
+- prefix sum
+- sliding window basics
+
+Problems Planned:
+- Two Sum
+- Best Time to Buy and Sell Stock
+- Maximum Subarray
+
+Purpose:
+Build strong coding problem-solving foundation.
+
+
+2. Strings
+
+Topics Covered:
+- substring
+- palindrome
+- string traversal
+- character frequency
+- hashing basics
+
+Problems Planned:
+- Valid Palindrome
+- Anagram Check
+- Longest Substring Without Repeating Characters
+
+Purpose:
+Strengthen interview coding patterns.
+
+
+====================================================
+PYTHON ENGINEERING
+====================================================
+
+3. Python Core Revision
+
+Topics Covered:
+- variables
+- loops
+- functions
+- classes
+- objects
+- inheritance
+- exception handling
+- file handling
+- JSON
+- modules
+
+Examples:
+
+name = "Sumanth"
+print(name)
+
+def greet(name):
+    print("Hello", name)
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+Purpose:
+Build strong Python engineering foundation.
+
+
+====================================================
+SQL FOUNDATION
+====================================================
+
+4. SQL Basics
+
+Topics Covered:
+- SELECT
+- WHERE
+- ORDER BY
+- GROUP BY
+- LIMIT
+- INSERT
+- UPDATE
+- DELETE
+
+Examples:
+
+SELECT * FROM users;
+
+INSERT INTO users(name,email)
+VALUES ('Sumanth','test@gmail.com');
+
+Purpose:
+Database interview preparation.
+
+
+====================================================
+CORE CS FUNDAMENTALS
+====================================================
+
+5. Operating Systems
+
+Topics Covered:
+- process
+- thread
+- process vs thread
+- CPU scheduling basics
+
+Purpose:
+Technical interview preparation.
+
+
+6. Computer Networks
+
+Topics Covered:
+- OSI model
+- TCP/IP
+- HTTP
+- HTTPS
+- DNS
+
+Purpose:
+Backend interview fundamentals.
+
+
+7. DBMS
+
+Topics Covered:
+- normalization
+- ACID properties
+- primary key
+- foreign key
+- indexing basics
+
+Purpose:
+Database interview readiness.
+
+
+====================================================
+GIT & GITHUB
+====================================================
+
+8. Git Revision
+
+Commands:
+
+git init
+git status
+git add .
+git commit -m "day14 progress"
+git push
+
+Purpose:
+Version control consistency.
+
+
+====================================================
+COMMUNICATION PRACTICE
+====================================================
+
+9. Interview Communication
+
+Practiced explaining:
+- What is an API?
+- Difference between process and thread
+- What is indexing?
+- What is HTTP?
+
+Purpose:
+Improve technical articulation.
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Day 14 marks the official start of the ₹50+ placement war plan.
+
+Focus areas:
+- coding problem solving
+- Python fundamentals
+- SQL basics
+- OS/CN/DBMS interview concepts
+- communication practice
+
+Big realization:
+Elite software engineering roles demand mastery in fundamentals, not surface-level knowledge.
+
+Day 14 is about laying the foundation for high compensation opportunities.
