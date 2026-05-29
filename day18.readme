@@ -1,0 +1,123 @@
+Hello, this is Sumanth. Today marks Day 18 of my Software Engineering Transformation Journey.
+Date : 29-05-2026
+Day : Friday
+
+GOAL:
+Build a strong foundation in Arrays, understand common problem-solving patterns, and begin developing coding interview skills through consistent DSA practice.
+
+====================================================
+DATA STRUCTURES & ALGORITHMS
+====================================================
+
+1. Arrays Fundamentals
+
+Topics Studied:
+- array traversal
+- insertion
+- deletion
+- updating elements
+- searching
+- indexing
+- time complexity basics
+
+Purpose:
+Understand one of the most fundamental data structures used in programming and interviews.
+
+
+====================================================
+PROBLEM SOLVING PATTERNS
+====================================================
+
+2. Array Patterns
+
+Explored:
+
+- Linear Traversal
+- Frequency Counting
+- Prefix Sum
+- Sliding Window (Introduction)
+- Two Pointers (Introduction)
+
+Purpose:
+Learn common techniques used to solve array-based interview questions efficiently.
+
+
+====================================================
+COMPLEXITY ANALYSIS
+====================================================
+
+3. Time Complexity
+
+Revised:
+
+O(1)
+O(log n)
+O(n)
+O(n log n)
+O(n²)
+
+Examples:
+- accessing an array element → O(1)
+- linear search → O(n)
+- binary search → O(log n)
+
+Purpose:
+Understand how to evaluate solution efficiency.
+
+
+====================================================
+PRACTICE QUESTIONS
+====================================================
+
+4. Array Problems
+
+Practiced / Explored:
+
+- Two Sum
+- Contains Duplicate
+- Best Time to Buy and Sell Stock
+- Maximum Subarray
+- Product of Array Except Self
+
+Focus:
+- brute force approach
+- optimized approach
+- time complexity comparison
+
+Purpose:
+Improve coding problem-solving skills.
+
+
+====================================================
+INTERVIEW PREPARATION
+====================================================
+
+5. Key Learnings
+
+Realizations:
+
+- Arrays are the foundation for many advanced topics.
+- Optimization matters as much as solving the problem.
+- Understanding patterns is more important than memorizing solutions.
+- Consistency is the key to improving in DSA.
+
+Purpose:
+Build long-term interview readiness.
+
+
+====================================================
+KEY TAKEAWAYS
+====================================================
+
+Day 18 was focused on building a strong foundation in Arrays.
+
+Major learnings:
+- array operations
+- problem-solving patterns
+- time complexity analysis
+- optimization thinking
+- interview-oriented problem solving
+
+Today was the first step toward becoming stronger at DSA.
+
+Small improvements every day eventually become major strengths.
